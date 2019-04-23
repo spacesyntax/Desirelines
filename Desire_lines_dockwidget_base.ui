@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DesirlinesDockWidgetBase</class>
+ <widget class="QDockWidget" name="DesirlinesDockWidgetBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>543</width>
+    <height>686</height>
+   </rect>
+  </property>
+  <property name="floating">
+   <bool>false</bool>
+  </property>
+  <property name="allowedAreas">
+   <set>Qt::BottomDockWidgetArea|Qt::RightDockWidgetArea|Qt::TopDockWidgetArea</set>
+  </property>
+  <property name="windowTitle">
+   <string>Desire Lines plugin</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QGridLayout" name="gridLayout_9">
+    <item row="3" column="0">
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="0" column="1">
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="title">
+         <string>Export file</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_8">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Select Save Location</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEdit">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="title">
+         <string>Select Network Layer</string>
+        </property>
+        <layout class="QFormLayout" name="formLayout_2">
+         <item row="0" column="0" colspan="2">
+          <widget class="QComboBox" name="comboBox">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="editable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <widget class="QPushButton" name="pushButton_5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Select Extent</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="text">
+              <string>Create Extent</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QGridLayout" name="gridLayout_6">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="title">
+         <string>Select Thresholds</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="5" column="0" colspan="3">
+          <widget class="QComboBox" name="comboBox_2">
+           <property name="editable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="0">
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="1">
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="text">
+              <string>Create Desire Lines</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QPushButton" name="pushButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Apply Filter</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="5" column="3">
+          <widget class="QDoubleSpinBox" name="doubleSpinBox">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="singleStep">
+            <double>0.100000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="3">
+          <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
+           <property name="singleStep">
+            <double>0.100000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="0" colspan="3">
+          <widget class="QComboBox" name="comboBox_3">
+           <property name="editable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="1">
+            <widget class="QRadioButton" name="radioButtonOR">
+             <property name="text">
+              <string>OR</string>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroup_2</string>
+             </attribute>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="radioButtonAND">
+             <property name="text">
+              <string>AND</string>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroup_2</string>
+             </attribute>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="3" column="0">
+          <widget class="QCheckBox" name="checkBox">
+           <property name="text">
+            <string>Primary measure</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="4">
+          <widget class="QComboBox" name="comboBox_4">
+           <property name="editable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="0">
+          <widget class="QCheckBox" name="checkBox_2">
+           <property name="text">
+            <string>Secondary measure</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Selected Extent</string>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="0">
+          <layout class="QGridLayout" name="gridLayout_11">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="radioButtonPer2">
+             <property name="text">
+              <string>Percentage</string>
+             </property>
+             <property name="autoRepeat">
+              <bool>false</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroup_3</string>
+             </attribute>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QRadioButton" name="radioButtonAbs2">
+             <property name="text">
+              <string>Absolute value</string>
+             </property>
+             <property name="autoRepeat">
+              <bool>false</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroup_3</string>
+             </attribute>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="4" column="0">
+          <layout class="QGridLayout" name="gridLayout_12">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="radioButtonPer1">
+             <property name="text">
+              <string>Percentage</string>
+             </property>
+             <property name="autoRepeat">
+              <bool>false</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroup</string>
+             </attribute>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QRadioButton" name="radioButtonAbs1">
+             <property name="text">
+              <string>Absolute Value</string>
+             </property>
+             <property name="autoRepeat">
+              <bool>false</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">buttonGroup</string>
+             </attribute>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup_3"/>
+ </buttongroups>
+</ui>
